@@ -15,5 +15,8 @@ Contents
 Additional Resources
 --------------------
 
+You can learn about me and my skill sets here:
+`Resume 2025 Updated  <_static/Olsen_Christopher_Resume_2025_newer.pdf>`_
+
 You can download a sample protocol here: 
 `Sample Protocol  <_static/sample_protocol.pdf>`_
