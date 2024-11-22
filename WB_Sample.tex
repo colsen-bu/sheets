@@ -1,0 +1,63 @@
+\documentclass{protocols}
+
+\title{Semi-Automated Western Blot}
+\author{Christopher Olsen}
+\date{\today}
+
+\begin{document}
+	\maketitle
+	
+	\section{Overview}
+	The purpose of this protocol is to standardize procedures for accomplishing a 96 well plate based semi-automated western blot procedure utilizing the Integra Viaflow for sample washing and lysis, and the Integra Assist Plus for sample normalization.
+	
+	\begin{materials}
+		\item Micropipettes (P20, P200, P1000)
+		\item 96 well deep well plates
+		\item 96 well round bottom plates (Falcon 305077)
+		\item Antibodies of interest
+		\item Bio-Rad standard western materials (Acrylamide gel, membranes, protein ladder etc.)
+	\end{materials}
+	
+	\begin{safety}
+		Wear appropriate PPE including gloves, lab coat, and safety glasses. Prepare and add sample buffer with Beta-mercaptoethanol under a fume hood.
+	\end{safety}
+	
+	\section{Procedure}
+	\begin{procedure}
+	\item\begin{days}[Day 0]
+			\item Plate cells at 500K cells/well in a 12 well culture plate in 1 mL of culture media.
+			\item Suspension cells can be dosed this same day. (Skip Day 2 of the procedure in this case).
+	\item\end{days}
+		\begin{days}[Day 1]
+			\item Dose compounds for adherent cells.
+		\end{days}
+		\begin{days}[Day 2]
+			\item For suspension cells, collect total 1 mL volume per well into 96 well deep well plate and centrifuge for 5 minutes at 300 G.
+			\item For adherent cells aspirate culture media, wash with PBS, and proceed to add 300 uL of Trypsin to detach cells from plate before adding 700 uL of culture media and collecting 1 mL total volume per well into 96 well deep well plate and centrifuging for 5 minutes at 300 G.
+			\item Inspect the deep well plate from below to ensure cell pellets are visible and present. After inspection proceed to use the Integra Viaflow in the dark room for liquid aspiration by running protocol "COLSEN\_WB". Prior to running this protocol ensure that the plate deck has been pushed as far to the right as possible and that a waste receptacle for collecting the aspirated liquid is set up in the center of the triple deck position. Place the deep well block containing samples in the leftmost deck position. Use the image below as a reference.
+			\newline
+			\item Next, re-suspend cell pellets in 300 uL of PBS by manually operating the viaflow using the pipette and mix functionality. Centrifuge the deep well sample plate again for 5 minutes at 300 G.
+			\item Aspirate the PBS by running the "COLSEN\_WB\_WASH" protocol and using the same deck setup as in the previously referenced image above.
+			\item Prepare Cytobuster Lysis buffer with added HALT protease and Phosphatase inhibitors.
+			\item Lyse the cells by manually operating the viaflow using the pipette and mix functionality.
+			\item Transfer the lysate solution to a round bottom 96 well plate by running the "COLSEN\_100uL\_MOVE" protocol with the deep well plate on the left platform position and the round bottom 96 well plate on the right.
+			\item Freeze samples in -80 C freezer
+		\end{days}
+		\begin{days}[Day 3]
+			\item Thaw sample plate on ice.
+			\item Centrifuge sample plate at maximum speed for 15 minutes with centrifuge set to 4 C.
+			\item Transfer the protein solution to a new round bottom 96 well plate by running the "COLSEN\_100uL\_MOVE" protocol with the previous 96 well plate on the left platform position and the new round bottom 96 well plate on the right.
+			\item Run the Bio-Rad DC Protein Assay according to the manufacturer's specifications \hyperlink{https://www.bio-rad.com/webroot/web/pdf/lsr/literature/LIT448.pdf}{manual}
+			\item Generate a worklist for Cytobuster normalization values and import it to D-ONE pipette using the "Immunoblot\_Normalization\_V1" protocol.
+			\item Generate a worklist for protein normalization values and import it to D-ONE pipette using the "Immunoblot\_Normalization\_Add\_Sample\_V1" protocol. Check the pipetting parameters for this protocol before running it to ensure liquid level detection is configured not to prompt the user but to go to the designated height. Also, make sure mixing speeds/volumes are not too high and aspiration speed is not too high.
+			\item Manually add sample buffer using a multichannel pipette.
+			\item Put the plate on a heat block for 5 minutes at 95 C.
+			\item Run the standard WB protocol from here on out.
+			
+		\end{days}
+	\end{procedure}
+	
+	
+	
+	
+\end{document}
