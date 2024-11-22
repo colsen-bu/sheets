@@ -1,9 +1,3 @@
-Template for the Read the Docs tutorial
-=======================================
+Read the docs here_
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
-
-Read the tutorial here:
-
-https://docs.readthedocs.io/en/stable/tutorial/
+.. _here: https://colsen-sheets.readthedocs.io/en/latest/
