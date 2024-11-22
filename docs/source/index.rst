@@ -16,4 +16,4 @@ Additional Resources
 --------------------
 
 You can download a sample protocol here: 
-`Sample Protocol  <./sample_protocol.pdf>`_
+`Sample Protocol  <_static/sample_protocol.pdf>`_

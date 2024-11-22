@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Whammer-sheets'
-copyright = '2024, Whammer'
-author = 'Whammer'
+project = 'colsen-sheets'
+copyright = '2024, Chris Olsen'
+author = 'Chris Olsen'
 
 release = '1.0.0'
 version = '1.0.0'
@@ -33,3 +33,5 @@ html_theme = 'sphinx_rtd_theme'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
+html_static_path = ['_static']
