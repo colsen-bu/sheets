@@ -2,6 +2,8 @@
 
 # -- Project information
 
+html_static_path = ['_static']
+
 project = 'colsen-sheets'
 copyright = '2024, Chris Olsen'
 author = 'Chris Olsen'
@@ -17,6 +19,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'sphinx_design',
 ]
 
 intersphinx_mapping = {
@@ -29,9 +32,26 @@ templates_path = ['_templates']
 
 # -- Options for HTML output
 
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'sphinx_rtd_theme'  # Use ReadTheDocs theme instead
+
+html_theme_options = {
+    "navigation_depth": 4,
+    "collapse_navigation": False,
+    "sticky_navigation": True,
+    "titles_only": False,
+    "display_version": True,
+    "style_nav_header_background": "#3a1c6e",  # Dark purple for header
+}
+
+# Custom styling
+html_css_files = [
+    'css/custom.css',
+]
+
+# Favicon and logo
+html_favicon = '_static/favicon.ico'
+html_logo = '_static/NET3000_new.png'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
 
-html_static_path = ['_static']
