@@ -267,7 +267,6 @@ body::before {
 }
 
 .card-corner-image {
-    position: absolute !important;
     top: 15px !important;
     right: 15px !important;
     max-width: 110px !important; /* Doubled from 55px */
@@ -285,4 +284,81 @@ body::before {
     display: block !important;
     border-bottom: 1px solid #444 !important;
     padding-bottom: 0.5rem !important;
+}
+/* --- Refined mobile card layout: Side-by-side, square, image and title only --- */
+@media (max-width: 800px) {
+  /* Allow grid items to be side-by-side */
+  .landing-grid .sd-grid-item {
+    width: calc(50% - 10px) !important; /* Two columns with some gap */
+    margin-bottom: 20px !important; /* Space below rows */
+    display: inline-block !important;
+    vertical-align: top;
+  }
+
+  /* Make cards square and use flex to center content */
+  .sd-card, .custom-card {
+    aspect-ratio: 1 / 1 !important;
+    width: 100% !important;
+    height: auto !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0.5em !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: hidden !important;
+  }
+
+  /* Make the card body visible and center its content */
+  .sd-card-body {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    text-align: center !important;
+    padding: 0 !important;
+  }
+
+  /* Show the card image */
+  .card-corner-image {
+    display: block !important;
+    position: static !important;
+    margin: 0 auto 0.5em auto !important;
+    max-width: 95% !important; /* Increased from 60% to 300% (5x bigger) */
+    max-height: 95% !important; /* Increased from 60% to 300% (5x bigger) */
+    width: auto !important;
+    height: auto !important;
+  }
+
+  /* Show the bold title text (typically wrapped in <strong> tags) */
+  .sd-card-body strong, /* For titles that are <strong> elements */
+  .custom-card strong {
+    display: block !important;
+    font-size: 0.9rem !important; /* Smaller font for mobile */
+    margin: 0.3em 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    color: #00b0ff !important; /* Match your theme color */
+    /* Remove any border that might be applied to desktop view */
+    border-bottom: none !important;
+  }
+
+  /* Hide the regular paragraph text */
+  .sd-card-body p, /* Regular paragraphs */
+  .sd-card-text, /* Text containers */
+  .custom-card p {
+    display: none !important;
+  }
+
+  /* Ensure the link still covers the card */
+  .sd-grid-item > .sd-card > a,
+  .sd-grid-item > a {
+    z-index: 2;
+    /* Make the link text invisible but keep the functionality */
+    font-size: 0;
+    color: transparent;
+  }
 }

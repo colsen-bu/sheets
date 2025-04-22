@@ -5,7 +5,7 @@
 html_static_path = ['_static']
 
 project = 'colsen-sheets'
-copyright = '2024, Chris Olsen'
+copyright = '2025, Chris Olsen'
 author = 'Chris Olsen'
 
 release = '1.0.2'
@@ -46,6 +46,10 @@ html_theme_options = {
 # Custom styling
 html_css_files = [
     'css/custom.css',
+]
+
+html_js_files = [
+    'js/custom.js',
 ]
 
 # Favicon and logo
