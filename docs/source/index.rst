@@ -1,6 +1,20 @@
 Christopher Olsen | Laboratory Protocols & Analysis Tools
 ========================================================
 
+.. raw:: html
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Christopher Olsen",
+      "url": "https://colsen.mcvcllmhgb.com/en/latest/",
+      "jobTitle": "Scientist and Software Developer",
+      "description": "Specializing in laboratory automation and data analysis tools",
+      "knowsAbout": ["Laboratory Automation", "Data Analysis", "Scientific Software Development"]
+    }
+    </script>
+
 Welcome to my toolbox portfolio where I share laboratory protocol templates, scientific analysis tools, and software development projects.
 
 About Me

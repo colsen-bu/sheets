@@ -20,6 +20,7 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
     'sphinx_design',
+    'sphinx_sitemap',
 ]
 
 intersphinx_mapping = {
@@ -55,6 +56,18 @@ html_js_files = [
 # Favicon and logo
 html_favicon = '_static/favicon.ico'
 html_logo = '_static/NET3000_new.png'
+
+# SEO Configuration
+html_meta = {
+    'description': 'Christopher Olsen - Scientist and software developer specializing in laboratory automation and data analysis tools',
+    'keywords': 'Christopher Olsen, laboratory automation, scientist, software developer, data analysis, scientific tools',
+    'author': 'Christopher Olsen',
+    'og:title': 'Christopher Olsen | Laboratory Protocols & Analysis Tools',
+    'og:description': 'Personal portfolio of Christopher Olsen featuring laboratory protocol templates, scientific analysis tools, and software development projects',
+    'og:url': 'https://colsen.mcvcllmhgb.com/en/latest/',
+    'og:type': 'website',
+    'og:site_name': 'Christopher Olsen',
+}
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
