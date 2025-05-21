@@ -3,6 +3,10 @@
 Changelog
 =========
 
+Version 1.0.3
+--------------
+* Added Timeline App tool and updated documentation to include it
+
 Version 1.0.2
 --------------
 * Added dose response tool

@@ -20,3 +20,7 @@ An interactive web tool that allows researchers to:
 * Design experimental layouts for multi-well plates
 * Visualize sample distribution and replicates
 * Export layouts to CSV or directly to liquid handling robots
+
+`Timeline App <https://timeline.mcvcllmhgb.com>`_
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+A web application for visualizing and interacting with scientific project timelines and milestones. Useful for tracking progress, deadlines, and key events in research projects.

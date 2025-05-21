@@ -8,8 +8,8 @@ project = 'colsen-sheets'
 copyright = '2025, Chris Olsen'
 author = 'Chris Olsen'
 
-release = '1.0.2'
-version = '1.0.2'
+release = '1.0.3'
+version = '1.0.3'
 
 # -- General configuration
 

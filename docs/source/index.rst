@@ -53,6 +53,18 @@ My Tools & Projects
         
         Interactive tool for analyzing and visualizing dose-response data from biological assays.
 
+    .. grid-item-card:: 
+        :class-card: sd-border-0 custom-card
+        :link: https://timeline.mcvcllmhgb.com
+        
+        .. image:: _static/timeline_img.png
+           :width: 100px
+           :class: card-corner-image
+        
+        **Timeline Tool**
+        
+        Visualize and interact with scientific project timelines and milestones.
+
 Laboratory Resources
 ^^^^^^^^^^^^^^^^^^^
 
