@@ -1,253 +1,84 @@
 /* Custom styles for personalization */
 
-/* Ensure dark mode applies to ALL elements EXCEPT navigation */
+/* --- GLOBAL (light mode) styles --- */
 html, body, div:not(.wy-nav-side):not(.wy-side-nav-search):not(.wy-nav-top):not(.wy-side-scroll), 
 header, footer, article, section {
-    background-color: #1a1a1a !important;
+    background-color: #f9fafb !important;
 }
-
-/* Keep these lines to ensure general dark mode */
 html {
-    background-color: #1a1a1a !important;
+    background-color: #f9fafb !important;
 }
-
 body {
-    background-color: #1a1a1a !important;
-    color: #e6e6e6 !important;
+    background-color: #f9fafb !important;
+    color: #222 !important;
     min-height: 100vh;
     width: 100%;
     overflow-x: hidden;
 }
-
-/* Fix for the main container background */
-.wy-grid-for-nav {
-    background-color: #1a1a1a !important;
-}
-
-/* Fix document container background */
+.wy-grid-for-nav,
 .wy-nav-content-wrap, .wy-nav-content-wrap::before, .wy-nav-content-wrap::after {
-    background-color: #1a1a1a !important;
+    background-color: #f9fafb !important;
 }
-
-/* Navigation side panel */
-body .wy-nav-side {
-    background-color: #222 !important;
-}
-
-/* Dark mode base styles */
-body, .wy-nav-content {
-    background-color: #1a1a1a;
-    color: #e6e6e6;
-}
-
-/* Main content area - FULL WIDTH SOLUTION */
-.wy-nav-content {
-    max-width: none !important; /* Remove max-width limitation */
-    background-color: #1a1a1a !important;
-    margin: 0 !important;
-    padding: 1.618em 3.236em !important;
-    border: none !important;
-    box-shadow: none !important;
-}
-
-/* Ensure no margins/borders create white space */
-.wy-nav-content, .wy-nav-content-wrap, .wy-grid-for-nav {
-    border: none !important;
-    box-shadow: none !important;
-}
-
-/* Remove any transitions that might affect rendering */
-* {
-    transition: background-color 0s !important;
-}
-
-/* Document area background */
-.document, .documentwrapper {
-    background-color: #1a1a1a !important;
-}
-
-.rst-content, .document {
-    background-color: #1a1a1a !important;
-}
-
-/* Fix for all other containers */
-.container, .container-fluid, .container-xl, .container-lg, .container-md, .container-sm {
-    background-color: #1a1a1a !important;
-}
-
-/* Fix all table backgrounds */
-table, tr, td, th {
-    background-color: #1a1a1a !important;
-}
-
-/* Fix for RTD theme-specific elements */
-.rst-content {
-    background-color: transparent !important;
-}
-
-/* Fix for the footer area which may have white background */
-.rst-footer-buttons {
-    background-color: #1a1a1a !important;
-}
-
-footer {
-    background-color: #1a1a1a !important;
-    color: #ccc !important;
-}
-
-/* Navigation sidebar colors - WITH HIGHER SPECIFICITY */
-body .wy-side-nav-search {
-    background-color: #3a1c6e !important;  /* Darker purple */
-}
-
-body .wy-nav-top {
-    background-color: #3a1c6e !important;
-}
-
-body .wy-side-scroll {
-    background-color: #222 !important;
-}
-
+body .wy-nav-side,
+body .wy-side-nav-search,
+body .wy-nav-top,
+body .wy-side-scroll,
 body .wy-menu-vertical {
-    background-color: #222 !important;
+    background-color: #f8f8f8 !important;
 }
-
 .wy-menu-vertical a {
-    color: #a185d0;
+    color: #3a1c6e;
 }
-
 .wy-menu-vertical a:hover {
-    background-color: #333;
-    color: #fff;
+    background-color: #e0e0e0;
+    color: #222;
 }
-
-/* Style links with your brand colors */
 a {
-    color: #00b0ff;  /* Brighter blue for better contrast on dark */
+    color: #3a1c6e;
 }
-
 a:hover {
-    color: #a185d0;  /* Lighter purple */
+    color: #00b0ff;
 }
-
-/* Custom styling for headings */
 h1, h2, h3 {
-    color: #00b0ff;  /* Brighter blue for headings */
+    color: #3a1c6e;
 }
-
 h1 {
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
 }
-
-/* Code block styling for dark mode */
 .highlight {
-    background-color: #2d2d2d;
+    background-color: #f5f5f5;
     border-radius: 4px;
 }
-
 .highlight pre {
-    color: #e6e6e6;
+    color: #222;
 }
-
 pre {
-    color: #e6e6e6;
+    color: #222;
     padding: 12px;
     border-radius: 4px;
 }
-
-/* Table styling for dark mode */
+table, tr, td, th {
+    background-color: #f9fafb !important;
+}
 table.docutils {
-    border-color: #444;
+    border-color: #ccc;
 }
-
 table.docutils td, table.docutils th {
-    border-color: #444;
+    border-color: #ccc;
 }
-
 table.docutils tr:nth-child(odd) {
-    background-color: #2d2d2d;
+    background-color: #f5f5f5;
 }
-
-/* Card styles for project listings */
-.sd-card {
-    background-color: #2d2d2d !important;
-    color: #e6e6e6 !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
-    transition: all 0.3s ease !important;
-    border-radius: 8px !important;
-    margin: 15px 5px !important;
-    border: 1px solid #444 !important;
-    position: relative !important;
-    overflow: hidden !important;
-}
-
-.sd-card:hover {
-    transform: translateY(-8px) !important;
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.6) !important;
-    border-color: #00b0ff !important;
-}
-
-/* Add a subtle gradient background */
-.sd-card::before {
-    content: "" !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    background: linear-gradient(145deg, #333333 0%, #222222 100%) !important;
-    z-index: -1 !important;
-}
-
-/* Make card titles stand out */
-.sd-card-title {
-    color: #00b0ff !important;
-    font-weight: bold !important;
-    font-size: 1.25rem !important;
-    margin-bottom: 0.75rem !important;
-    border-bottom: 1px solid #444 !important;
-    padding-bottom: 0.5rem !important;
-}
-
-/* Style card images */
-.sd-card-img-top {
-    border-bottom: 1px solid #444 !important;
-    padding: 10px !important;
-    background-color: #1a1a1a !important;
-}
-
-/* Style card text */
-.sd-card-text {
-    padding: 1rem !important;
-    line-height: 1.5 !important;
-}
-
-/* Add a subtle glow effect on hover */
-.sd-card:hover::after {
-    content: "" !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    box-shadow: inset 0 0 20px rgba(0, 176, 255, 0.2) !important;
-    border-radius: 8px !important;
-    pointer-events: none !important;
-}
-
-/* Better code contrast */
 .rst-content code {
-    background-color: #333;
-    color: #e6e6e6;
-    border: 1px solid #444;
+    background-color: #f5f5f5;
+    color: #222;
+    border: 1px solid #ccc;
 }
-
-/* Ensure the navigation is also dark */
-nav {
-    background-color: #1a1a1a !important;
+nav, footer, .rst-footer-buttons {
+    background-color: #f9fafb !important;
+    color: #222 !important;
 }
-
 body::before {
     content: "";
     position: fixed;
@@ -255,10 +86,50 @@ body::before {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #1a1a1a;
+    background-color: #f9fafb;
     z-index: -1;
 }
 
+/* Always keep home/logo area purple in both modes */
+body .wy-side-nav-search, .wy-side-nav-search {
+    background-color: #3a1c6e !important;
+    background: #3a1c6e !important;
+}
+
+/* Always dark mode for version number and search field under home/profile icon */
+.wy-side-nav-search .version {
+    background: #222 !important;
+    color: #444 !important; /* darker text for light mode */
+    border-radius: 4px !important;
+    padding: 2px 8px !important;
+    font-weight: bold;
+}
+body.dark-mode .wy-side-nav-search .version {
+    color: #eee !important; /* light text for dark mode */
+}
+
+.wy-side-nav-search input[type='text'] {
+    background: #222 !important;
+    color: #eee !important;
+    border: 1px solid #444 !important;
+    border-radius: 4px !important;
+}
+.wy-side-nav-search input[type='text']::placeholder {
+    color: #bbb !important;
+    opacity: 1;
+}
+
+/* Full-width content in both modes */
+.wy-nav-content {
+    max-width: none !important;
+    background-color: inherit !important;
+    margin: 0 !important;
+    padding: 1.618em 3.236em !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* --- Custom card/mobile layout and structure styles (not color) remain global --- */
 /* Custom card with larger corner image */
 .custom-card {
     position: relative !important;
@@ -361,4 +232,130 @@ body::before {
     font-size: 0;
     color: transparent;
   }
+}
+
+/* --- DARK MODE styles --- */
+body.dark-mode,
+body.dark-mode html, 
+body.dark-mode body, 
+body.dark-mode div:not(.wy-nav-side):not(.wy-side-nav-search):not(.wy-nav-top):not(.wy-side-scroll), 
+body.dark-mode header, 
+body.dark-mode footer, 
+body.dark-mode article, 
+body.dark-mode section {
+    background-color: #1a1a1a !important;
+    color: #e6e6e6 !important;
+}
+body.dark-mode .wy-grid-for-nav,
+body.dark-mode .wy-nav-content-wrap, 
+body.dark-mode .wy-nav-content-wrap::before, 
+body.dark-mode .wy-nav-content-wrap::after {
+    background-color: #1a1a1a !important;
+}
+body.dark-mode .wy-nav-side {
+    background-color: #222 !important;
+}
+body.dark-mode .wy-nav-top {
+    background-color: #3a1c6e !important;
+}
+body.dark-mode .wy-side-scroll {
+    background-color: #222 !important;
+}
+body.dark-mode .wy-menu-vertical {
+    background-color: #222 !important;
+}
+body.dark-mode .wy-menu-vertical a {
+    color: #9ecbff !important;
+}
+body.dark-mode .wy-menu-vertical a:hover {
+    background-color: #333 !important;
+    color: #fff !important;
+}
+body.dark-mode .wy-menu-vertical a.current {
+    background: #444 !important;
+    color: #fff !important;
+}
+body.dark-mode a {
+    color: #00b0ff !important;
+}
+body.dark-mode a:hover {
+    color: #a185d0 !important;
+}
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 {
+    color: #00b0ff !important;
+}
+body.dark-mode h1 {
+    border-bottom: 1px solid #444;
+}
+body.dark-mode .highlight {
+    background-color: #2d2d2d !important;
+}
+body.dark-mode .highlight pre {
+    color: #e6e6e6 !important;
+}
+body.dark-mode pre {
+    color: #e6e6e6 !important;
+}
+body.dark-mode table, 
+body.dark-mode tr, 
+body.dark-mode td, 
+body.dark-mode th {
+    background-color: #1a1a1a !important;
+}
+body.dark-mode table.docutils {
+    border-color: #444 !important;
+}
+body.dark-mode table.docutils td, 
+body.dark-mode table.docutils th {
+    border-color: #444 !important;
+}
+body.dark-mode table.docutils tr:nth-child(odd) {
+    background-color: #2d2d2d !important;
+}
+body.dark-mode .rst-content code {
+    background-color: #333 !important;
+    color: #e6e6e6 !important;
+    border: 1px solid #444 !important;
+}
+body.dark-mode nav, 
+body.dark-mode footer, 
+body.dark-mode .rst-footer-buttons {
+    background-color: #1a1a1a !important;
+    color: #ccc !important;
+}
+body.dark-mode body::before {
+    background-color: #1a1a1a !important;
+}
+body.dark-mode .sd-card {
+    background-color: #2d2d2d !important;
+    color: #e6e6e6 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+    border: 1px solid #444 !important;
+}
+body.dark-mode .sd-card-title,
+body.dark-mode .custom-card strong {
+    color: #00b0ff !important;
+    border-bottom: 1px solid #444 !important;
+}
+body.dark-mode .sd-card-img-top {
+    background-color: #1a1a1a !important;
+    border-bottom: 1px solid #444 !important;
+}
+body.dark-mode .sd-card-text {
+    color: #e6e6e6 !important;
+}
+body.dark-mode .sd-card:hover {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.6) !important;
+    border-color: #00b0ff !important;
+}
+body.dark-mode .sd-card::before {
+    background: linear-gradient(145deg, #333333 0%, #222222 100%) !important;
+}
+body.dark-mode .sd-card:hover::after {
+    box-shadow: inset 0 0 20px rgba(0, 176, 255, 0.2) !important;
+}
+
+/* Remove any transitions that might affect rendering */
+* {
+    transition: background-color 0s !important;
 }
