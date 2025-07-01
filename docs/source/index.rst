@@ -64,6 +64,18 @@ My Tools & Projects
         **Timeline Tool**
         
         Visualize and interact with scientific project timelines and milestones.
+    
+    .. grid-item-card:: 
+        :class-card: sd-border-0 custom-card
+        :link: https://www.impactfactorzero.mcvcllmhgb.com
+
+        .. image:: _static/impactfactorzero_logo.png
+           :width: 100px
+           :class: card-corner-image
+
+        **Impact Factor Zero**
+
+        A blog where I dump thoughts, ideas, and miscellaneous content.
 
 Laboratory Resources
 ^^^^^^^^^^^^^^^^^^^
