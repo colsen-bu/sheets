@@ -86,7 +86,7 @@ Laboratory Resources
 Professional Background
 ----------------------
 
-* `Resume (2025) <_static/Olsen_Christopher_Resume_2025_newer.pdf>`_
+* `Resume (2025) <_static/Olsen_Christopher_Resume_2025_ent_w_3.pdf>`_
 * :doc:`projects` - Details of my recent software development projects
 * :doc:`publications` - My scientific publications and contributions
 
