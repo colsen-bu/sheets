@@ -15,7 +15,7 @@ Christopher Olsen | Laboratory Protocols & Analysis Tools
     }
     </script>
 
-Welcome to my toolbox portfolio where I share laboratory protocol templates, scientific analysis tools, and software development projects.
+Welcome to a sampling of my portfolio where I share laboratory protocol templates, software tools, and miscellaneous content.
 
 About Me
 --------
