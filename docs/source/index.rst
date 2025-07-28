@@ -50,8 +50,8 @@ My Tools & Projects
            :class: card-corner-image
         
         **Dose Response Analysis**
-        
-        Interactive tool for analyzing and visualizing dose-response data from biological assays.
+
+        Interactive tool for analyzing and visualizing dose-response data from biological assays. Or any random dose response data, has a few bugs.
 
     .. grid-item-card:: 
         :class-card: sd-border-0 custom-card
@@ -63,7 +63,7 @@ My Tools & Projects
         
         **Timeline Tool**
         
-        Visualize and interact with scientific project timelines and milestones.
+        Making timeline slides in PPT sucks, hoping this makes it faster/easier.
     
     .. grid-item-card:: 
         :class-card: sd-border-0 custom-card
@@ -75,13 +75,13 @@ My Tools & Projects
 
         **Impact Factor Zero**
 
-        A blog where I dump thoughts, ideas, and miscellaneous content.
+        A blog to dump ideas, and miscellaneous content. Currently is very empty. Cause everyone has a substack these days so why not?
 
 Laboratory Resources
 ^^^^^^^^^^^^^^^^^^^
 
-* `Sample Protocol <_static/sample_protocol.pdf>`_ - A custom latex protocol template
-* `Cell Culture Template <_static/cell_culture_template.xlsm>`_ - Excel template for standardizing cell culture procedures
+* `Sample Protocol <_static/sample_protocol.pdf>`_ - A custom latex protocol example from a prior project
+* `Cell Culture Template <_static/cell_culture_template.xlsm>`_ - Excel template for my convenience to download onto any computer
 
 Professional Background
 ----------------------
